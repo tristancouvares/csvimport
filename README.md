@@ -3,7 +3,7 @@
 issue: https://help.lever.co/hc/en-us/articles/204498425-How-do-I-add-multiple-import-many-candidates-
 
 Solution:
-quick hack to reformat a csv file so that level can do a mass import for you
+quick hack to reformat a csv file so that lever can do a mass import for you
 
 how to:
 
