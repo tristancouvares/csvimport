@@ -3,9 +3,9 @@ const path = require("path");
 
 
 const _ = require("lodash");
-const csvRead = require("fast-csv");
+const { parse } = require("fast-csv");
 const createCsvWriter = require("csv-writer").createObjectCsvWriter;
-const uuid = require("uuid/v4");
+const { v4: uuid } = require("uuid");
 const moment = require("moment");
 
 const source = process.argv[2];
@@ -23,7 +23,7 @@ function readCsv(path) {
         let data = [];
 
         fs.createReadStream(path)
-            .pipe(csvRead())
+            .pipe(parse())
             .on('data', (row) => {
                 if (!fields) {
                     fields = row;
@@ -98,4 +98,3 @@ function readCsv(path) {
 
     await csvWriter.writeRecords(resData)
 })();
-
