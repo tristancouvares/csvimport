@@ -1,4 +1,4 @@
-# csvimpot
+# csvimport
 
 issue: https://help.lever.co/hc/en-us/articles/204498425-How-do-I-add-multiple-import-many-candidates-
 
